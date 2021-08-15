@@ -1,0 +1,11 @@
+@import './../../scss_variables/colors.scss';
+
+.system-buttons-container {
+    height: 50px;
+    width: 100%;
+    background-color: $dark-main-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px 0 0 0;
+}

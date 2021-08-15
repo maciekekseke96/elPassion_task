@@ -1,0 +1,21 @@
+@import './../../scss_variables/colors.scss';
+
+.system-button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  &.red {
+    background-color: $red-system-button;
+  }
+  &.yellow {
+    background-color: $yellow-system-button;
+  }
+  &.green {
+    background-color: $green-system-button;
+  }
+
+  &:hover {
+      cursor: pointer;
+  }
+}

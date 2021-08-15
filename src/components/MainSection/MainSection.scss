@@ -1,0 +1,8 @@
+@import './../../scss_variables/colors.scss';
+
+.main-section {
+  width: 500px;
+  height: 500px;
+  background-color: $bright-main-color;
+  border-radius: 0 10px 10px 0;
+}

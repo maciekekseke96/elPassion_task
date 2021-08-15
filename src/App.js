@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <SideBar filter={this.state.filter} setFilter={this.setFilter} />
+        <SideBar filter={this.state.filter} setFilter={this.setFilter} issues={this.state.issues} />
         <MainSection issues={this.state.issues} setIssues={this.setIssues} />
       </div>
     );

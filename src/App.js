@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import SideBar from './components/SideBar/SideBar';
 import MainSection from './components/MainSection/MainSection';
+import { temp_issues } from './temp_issues/temp_issues';
 import './App.scss';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      issues: [],
+      issues: temp_issues,
       filter: 'all',
     };
   }
@@ -20,7 +21,7 @@ class App extends Component {
     return (
       <div className="app">
         <SideBar filter={this.state.filter} setFilter={this.setFilter} />
-        <MainSection />
+        <MainSection issues={this.state.issues} />
       </div>
     );
   }

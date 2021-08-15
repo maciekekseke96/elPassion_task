@@ -1,0 +1,10 @@
+@import './../../scss_variables/colors.scss';
+
+.issues-list {
+    width: 95%;
+    .issues-date {
+        font-size: 10px;
+        color: $issue-date;
+        margin-left: 5px;
+    }
+}

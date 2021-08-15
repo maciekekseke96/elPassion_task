@@ -7,3 +7,18 @@ export const removeDuplicates = (arr) => {
   });
   return uniqueValues;
 };
+
+export const findIssueById = (arr, id) => {
+  const foundIssue = arr.find((element) => {
+    return element.id === id;
+  });
+
+  const foundIssueIndex = arr.findIndex((element) => {
+    return (element.id === id);
+  });
+
+  return {
+    issue: foundIssue,
+    id: foundIssueIndex,
+  };
+};

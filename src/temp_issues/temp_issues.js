@@ -17,7 +17,7 @@ export const temp_issues = [
   { id: 6, date: '13/08/2021', description: 'Sidebar upadate', status: 'open' },
   {
     id: 7,
-    date: '13/08/2021',
+    date: '15/08/2021',
     description: 'Visual update & Crash resolve',
     status: 'open',
   },

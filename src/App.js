@@ -12,6 +12,12 @@ class App extends Component {
       filter: 'all',
     };
   }
+
+  setIssues = (updatedIssues) => {
+    this.setState({
+      issues: updatedIssues,
+    });
+  };
   setFilter = (filter) => {
     this.setState({
       filter,
@@ -21,7 +27,7 @@ class App extends Component {
     return (
       <div className="app">
         <SideBar filter={this.state.filter} setFilter={this.setFilter} />
-        <MainSection issues={this.state.issues} />
+        <MainSection issues={this.state.issues} setIssues={this.setIssues} />
       </div>
     );
   }

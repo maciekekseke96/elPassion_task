@@ -3,7 +3,7 @@ import IssuesList from './../IssuesList/IssuesList';
 import { removeDuplicates } from '../../utils/utils';
 import './MainSection.scss';
 
-const MainSection = ({ issues }) => {
+const MainSection = ({ issues, setIssues }) => {
   const dates = removeDuplicates(issues.map((issue) => issue.date));
 
   return (
@@ -14,6 +14,8 @@ const MainSection = ({ issues }) => {
             key={id}
             date={date}
             issues={issues.filter((issue) => issue.date === date)}
+            currentIssues = {issues}
+            setIssues={setIssues}
           />
         );
       })}

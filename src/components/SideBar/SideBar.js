@@ -3,11 +3,11 @@ import SystemButtons from '../SystemButtons/SystemButtons';
 import Navigation from '../Navigation/Navigation';
 import './SideBar.scss';
 
-const SideBar = () => {
+const SideBar = ({ filter, setFilter }) => {
   return (
     <div className="side-bar">
       <SystemButtons />
-      <Navigation />
+      <Navigation filter={filter} setFilter={setFilter} />
     </div>
   );
 };

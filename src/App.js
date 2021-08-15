@@ -8,13 +8,18 @@ class App extends Component {
     super();
     this.state = {
       issues: [],
-      filter: '',
+      filter: 'all',
     };
   }
+  setFilter = (filter) => {
+    this.setState({
+      filter,
+    });
+  };
   render() {
     return (
       <div className="app">
-        <SideBar />
+        <SideBar filter={this.state.filter} setFilter={this.setFilter} />
         <MainSection />
       </div>
     );
